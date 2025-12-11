@@ -60,8 +60,9 @@ map <- ggplot() +
                aes(x = long, y = lat, group = group, fill = `Total kg/person`), 
                color = "grey", linewidth = 0.2) +
   # Set custom color scale from dark green to yellow to red
-  scale_fill_gradient(low = "darkgreen", high = "red", 
-                     name = "Total kg/person") +
+  scale_fill_gradientn(colors = c("darkgreen", "yellow", "red"), 
+                       name = "Total kg/person",
+                       na.value = "white") +
   # Remove axis titles
   theme_void() +
   # Add title, subtitle, and caption
