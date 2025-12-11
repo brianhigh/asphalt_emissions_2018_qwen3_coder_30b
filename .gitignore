@@ -72,6 +72,3 @@ coverage.xml
 ehthumbs.db
 Thumbs.db
 
-# Data and plots folders (don't ignore these)
-data/
-plots/
